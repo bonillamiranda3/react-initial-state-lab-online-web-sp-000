@@ -1,6 +1,6 @@
 // your Bomb code here!
 
-import React frin 'react';
+import React from 'react';
 
 export default class Bomb extends React.component {
   constructor(props) {
