@@ -3,7 +3,7 @@
 import React frin 'react';
 
 export default class Bomb extends React.component {
-  constructor(props)
+  constructor(props) {
   super()
   this.state = {
     secondsLeft: prop.initialCount
@@ -12,5 +12,9 @@ export default class Bomb extends React.component {
 
 
   render() {
-    const response = this.state.secondsLeft === 0 ? 'Boom!'
-  }
+    const response = this.state.secondsLeft === 0 ? 'Boom!' : `${this.state.secondsLeft} seconds left before I g boom!`;
+      return (
+        <div>{response}</div>
+      );
+    }
+}
